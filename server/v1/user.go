@@ -23,7 +23,7 @@ func Register(c *gin.Context) {
 	}
 	newUser := User{
 		Username: username,
-		Password: base64.StdEncoding.EncodeToString(hashed)
+		Password: base64.StdEncoding.EncodeToString(hashed),
 	}
 }
 
